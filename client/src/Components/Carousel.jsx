@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
-import './carousel.css'
 import '../App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Image1 from '../../dist/images/slide1.jpg';
 import Image2 from '../../dist/images/slide2.jpg';
 import Image3 from '../../dist/images/slide3.jpg';
@@ -105,7 +104,7 @@ class Example extends Component {
         <h6>Find your nearest local tattoo shop that fits your style</h6>  
         </p>    
       </div> 
-      <div>
+      <div className='mainCarousel'>
       <Carousel
         activeIndex={activeIndex}
         next={this.next}

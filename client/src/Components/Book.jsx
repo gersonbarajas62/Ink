@@ -26,6 +26,7 @@ class Book extends Component{
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
     this.addDays = this.addDays.bind(this);
+    this.getData = this.getData.bind(this);
   }
 
  /*
@@ -41,7 +42,36 @@ class Book extends Component{
       dropdownOpen: !prevState.dropdownOpen
     }));
   }
+  getData(url) {
+    $.ajax({
+      url: url,
+      method: 'GET',
+      success: (results => {
+        let currentDays = this.state.datesToExclude;
+        currentDays.push(results)
+        this.setState({
+          datesToExclude: currentDays
+        });
+        console.log(results)
+      }),
+      error: (xhr, err) => {
+        console.log('err', err);
+      }
+    });
+  }
+    /*
+  }
 
+    addDays (url= '', data= {}) {
+    return fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+  }
+  */
   addDays () {
     let { date, datesToExclude } = this.state
     let currentDays = datesToExclude;

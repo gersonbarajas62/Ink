@@ -7,8 +7,8 @@
   },
   "proxy": "http://localhost:3000",
   "main": "index.js",
-  "repository": "https://github.com/BrunoTorresF/react-boilerplate",
-  "author": "Bruno Torres",
+  "repository": "https://github.com/runtime-terrors/Ink.git",
+  "author": "Gerson Roa",
   "license": "MIT",
   "scripts": {
     "frontend": "webpack-dev-server --hot --mode development --open",
@@ -17,8 +17,7 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "webpack --config webpack.config.js --mode development --watch",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "webpack --config webpack.config.js --mode development --watch"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",

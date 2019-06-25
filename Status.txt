@@ -1,2 +1,0 @@
-Authorize this app by visiting this url: https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar&response_type=code&client_id=426112496322-4aqe0277jtot3cvd8dqhlt0a3ode2run.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fdevelopers.google.com%2Foauthplayground%2F
-Enter the code from that page here: 

@@ -11,12 +11,12 @@
   "author": "Gerson Roa",
   "license": "MIT",
   "scripts": {
-    "start-dev": "nodemon server/index.js",
-    "build": "webpack --config webpack.prod.js --mode production",
-    "start": "node index.js",
-    "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "webpack --config webpack.config.js --mode development --watch"
+    "start": "node server/index.js",
+    "start-dev": "webpack --config webpack.config.js --mode development --watch",
+    "build": "webpack --config webpack.prod.js --mode production",
+    "com": "webpack --config webpack.config.js --mode development --watch",
+    "dev": "npm run start && npm run com"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",

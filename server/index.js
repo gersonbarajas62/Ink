@@ -1,14 +1,12 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
+const  express = require('express');
+const  app = express();
+const port = process.env.PORT || 5000;
 
-
-var app = express();
 
 // UNCOMMENT FOR REACT
  app.use(express.static(__dirname + '/../client/dist'));
 
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log('listening on port 3000!');
 });

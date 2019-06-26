@@ -5,15 +5,14 @@
   "engines": {
     "node": "11.12.0"
   },
-  "proxy": "http://localhost:3000",
-  "main": "index.js",
+  "proxy": "http://localhost:5000",
+  "main": "server/index.js",
   "repository": "https://github.com/runtime-terrors/Ink.git",
   "author": "Gerson Roa",
   "license": "MIT",
   "scripts": {
     "client": "npm run start --prefix client",
     "start": "node server/index.js",
-    "build": "webpack --config webpack.prod.js --mode production",
     "com": "webpack --config webpack.config.js --mode development --watch",
     "dev": "npm run start && npm run com"
   },
